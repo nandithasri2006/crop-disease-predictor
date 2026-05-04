@@ -1,52 +1,59 @@
  Crop Disease Predictor
- Overview
+1. Overview
 
-The Crop Disease Predictor is a machine learning-based application designed to identify and classify plant diseases from agricultural data. The goal of this project is to assist farmers and agricultural professionals in early detection of crop diseases, enabling timely intervention and improved crop yield.
+This project focuses on developing a machine learning model to predict crop diseases based on agricultural data. The system aims to support early disease detection, helping improve crop health and productivity.
 
- Features
-Predicts multiple crop diseases using supervised machine learning
-Handles imbalanced datasets using advanced techniques (e.g., SMOTE)
-Performs data preprocessing and feature engineering for improved accuracy
-Provides high prediction accuracy (~98%) on test data
-Scalable and adaptable for different crop datasets
- Tech Stack
-Programming Language: Python
+2. Objectives
+Build a reliable multi-class classification model for crop disease prediction
+Improve model performance using preprocessing and feature engineering
+Handle imbalanced datasets effectively
+Provide a scalable solution for real-world agricultural use
+3. Key Features
+Multi-class disease prediction
+Data preprocessing and cleaning
+Feature engineering for better accuracy
+Class imbalance handling using SMOTE
+High model accuracy (~98%)
+4. Tech Stack
+Language: Python
 Libraries: NumPy, Pandas, Scikit-learn, XGBoost
-Techniques:
+Concepts Used:
+Machine Learning
+Data Preprocessing
+Feature Engineering
+Model Evaluation
+5. Model Information
+Algorithm: XGBoost Classifier
+Type: Supervised Learning (Classification)
+Evaluation Metrics: Accuracy, Precision, Recall, F1-score
+Performance: Achieved ~98% accuracy
+6. Workflow
+Data Collection
 Data Cleaning & Preprocessing
 Feature Engineering
-Class Imbalance Handling (SMOTE)
-Model Training & Evaluation
- Model Details
-Algorithm Used: XGBoost Classifier
-Problem Type: Multi-class Classification
-Evaluation Metrics: Accuracy, Precision, Recall, F1-score
-Achieved approximately 98% accuracy after optimization
-Project Structure
+Handling Class Imbalance (SMOTE)
+Model Training (XGBoost)
+Model Evaluation
+Prediction
+7. Project Structure
 Crop-Disease-Predictor/
-│── data/                 # Dataset files
-│── notebooks/            # Jupyter notebooks for experimentation
-│── src/                  # Source code (training & prediction)
-│── models/               # Saved trained models
-│── requirements.txt      # Dependencies
-│── README.md             # Project documentation
- Installation & Setup
-Clone the repository
+│── data/
+│── notebooks/
+│── src/
+│── models/
+│── requirements.txt
+│── README.md
+8. Installation & Setup
 git clone https://github.com/your-username/crop-disease-predictor.git
 cd crop-disease-predictor
-Install dependencies
 pip install -r requirements.txt
-Run the project
 python src/predict.py
- Future Improvements
-Integration with a web or mobile application
-Real-time disease detection using image input
-Deployment using cloud platforms (Azure/AWS)
-Expansion to more crop varieties and diseases
- Contribution
-
-Contributions are welcome. Please fork the repository and submit a pull request for improvements.
-
-📜 License
-
-This project is open-source and available under the MIT License.
+9. Results
+Achieved high accuracy (~98%)
+Improved performance through feature engineering and SMOTE
+Model performs well on multi-class classification tasks
+10. Future Enhancements
+Web application integration
+Image-based disease detection
+Deployment on cloud platforms
+Expansion to more crops and datasets
